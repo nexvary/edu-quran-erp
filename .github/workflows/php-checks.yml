@@ -1,0 +1,18 @@
+name: PHP checks
+on:
+  push:
+  pull_request:
+jobs:
+  php:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.2'
+          extensions: mbstring, pdo_mysql
+      - name: Lint PHP
+        run: find modules tests -name '*.php' -print0 | xargs -0 -n1 php -l
+      - name: Unit checks
+        run: php tests/validation_test.php

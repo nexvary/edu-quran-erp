@@ -1,0 +1,13 @@
+.qh-shell{direction:rtl;text-align:right;max-width:1100px;margin:0 auto}
+.qh-nav{display:flex;gap:12px;flex-wrap:wrap;margin:15px 0 22px}
+.qh-nav a{padding:8px 12px;background:#e7f2ec;color:#125b39;border-radius:8px;text-decoration:none}
+.qh-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(165px,1fr));gap:12px}
+.qh-card{border:1px solid #d7e1db;padding:16px;border-radius:10px;background:#fff}
+.qh-card strong{font-size:1.8rem;display:block;color:#145a39}
+.qh-table{border-collapse:collapse;width:100%;margin:12px 0 25px}
+.qh-table th,.qh-table td{padding:10px;border:1px solid #dce6e0;text-align:right}
+.qh-table th{background:#edf5f0}
+.qh-form{display:grid;gap:10px;max-width:650px;margin-bottom:24px}
+.qh-form input,.qh-form select,.qh-form textarea{width:100%;padding:9px;border:1px solid #aabdb1;border-radius:7px}
+.qh-form button{background:#146a42;color:#fff;padding:10px 18px;border:0;border-radius:7px;cursor:pointer}
+.qh-success{color:#146a42}.qh-error{color:#a32626}

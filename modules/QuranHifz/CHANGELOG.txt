@@ -1,0 +1,3 @@
+1.0.00 (2026-10-12)
+- Initial Gibbon module with circles, student enrollment, meetings, attendance, recitation and reports.
+- Admin-only permissions by default. All writes validate server-side and require CSRF tokens.
