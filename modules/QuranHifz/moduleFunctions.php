@@ -35,10 +35,10 @@ function qhActionAllowed(string $page): bool
     global $guid, $connection2;
     return isActionAccessible($guid, $connection2, '/modules/QuranHifz/' . $page);
 }
-function qhGuard(string $page): bool
+function qhGuard(string $actionPage): bool
 {
     global $page;
-    if (qhActionAllowed($page)) {
+    if (qhActionAllowed($actionPage)) {
         return true;
     }
     $page->addError(__('You do not have access to this action.'));
