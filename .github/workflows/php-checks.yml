@@ -15,7 +15,7 @@ jobs:
       - name: Lint PHP
         run: find modules tests -name '*.php' -print0 | xargs -0 -n1 php -l
       - name: Unit checks
-        run: php tests/validation_test.php
+        run: php tests/validation_test.php && php tests/ui_dashboard_test.php
 
   mysql-contract:
     runs-on: ubuntu-latest
