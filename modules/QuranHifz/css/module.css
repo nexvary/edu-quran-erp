@@ -117,3 +117,30 @@
 @media(max-width:900px){.qh-dashboard-grid{grid-template-columns:1fr}.qh-kpis{grid-template-columns:repeat(2,minmax(0,1fr))}.qh-hero{grid-template-columns:1fr 180px}.qh-orbit-b{width:160px;height:160px}.qh-orbit-a{width:135px;height:135px}.qh-symbol{width:99px;height:99px;border-radius:26px}.qh-symbol .qh-icon{width:51px;height:51px}}
 @media(max-width:620px){.qh-toolbar{border-radius:16px 16px 0 0;padding:15px 12px 10px}.qh-shell{border-radius:0 0 16px 16px;padding:13px}.qh-top-row{align-items:flex-start;gap:9px}.qh-brand{gap:7px}.qh-mark{width:37px;height:37px}.qh-brand strong{font-size:14px}.qh-brand small{font-size:10px}.qh-school-link{font-size:0;padding:9px;gap:0}.qh-school-link .qh-icon:last-child{display:none}.qh-school-link .qh-icon{width:21px;height:21px}.qh-nav{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:4px}.qh-nav a{flex-direction:column;text-align:center;gap:3px;padding:9px 2px;font-size:10px;line-height:1.4}.qh-nav .qh-icon{width:18px;height:18px}.qh-hero{grid-template-columns:1fr;min-height:auto;padding:23px 19px}.qh-hero-art{display:none}.qh-hero h1{font-size:25px}.qh-hero p{font-size:12px}.qh-btn{flex:1}.qh-kpis{gap:8px}.qh-kpi{padding:15px 12px}.qh-kpi-icon{margin-bottom:10px}.qh-kpi-value{font-size:27px}.qh-kpi-foot{font-size:10px}.qh-section-title{align-items:start}.qh-context{display:none}.qh-panel-heading h2{font-size:15px}.qh-shell .qh-form{grid-template-columns:1fr}.qh-panel{padding:15px}.qh-shell .qh-table th,.qh-shell .qh-table td{padding:10px}}
 @media(prefers-reduced-motion:reduce){.qh-nav a,.qh-shell .qh-btn{transition:none}}
+
+
+/* Secondary workflows — shared page treatment */
+.qh-page-head{display:flex;justify-content:space-between;align-items:center;gap:18px;margin-bottom:22px;background:linear-gradient(120deg,#173a3b,#152a43);padding:clamp(21px,2.7vw,33px);border:1px solid #405e67;border-radius:18px}
+.qh-page-head h1{font-size:clamp(23px,2.6vw,31px);font-weight:850;color:#f7fafc;margin:5px 0 7px}
+.qh-page-head p{max-width:660px;color:#b5c8d4;font-size:13px;line-height:1.8;margin:0}
+.qh-page-symbol{display:grid;place-items:center;min-width:66px;height:66px;border-radius:17px;border:1px solid #a98e6066;background:#cca87513;color:#f0d39c}
+.qh-page-symbol .qh-icon{width:35px;height:35px}
+.qh-dual-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px;margin-top:15px}
+.qh-dual-grid .qh-form{grid-template-columns:1fr;background:none;border:0;padding:0;margin:0}
+.qh-panel>.qh-form{background:transparent;border:0;padding:0;margin:0}
+.qh-shell .qh-form.qh-form-three{grid-template-columns:repeat(3,minmax(0,1fr));align-items:end}
+.qh-panel .qh-panel-heading{margin-bottom:16px}
+.qh-count-tag{display:inline-block;background:#243e4c;border:1px solid #44606b;color:#b8e6d3;border-radius:12px;padding:5px 12px;font:750 12px system-ui,sans-serif;white-space:nowrap}
+.qh-mini-icon{display:grid;place-items:center;width:38px;height:38px;border-radius:10px;background:#264339;color:#7aded0}
+.qh-mini-icon .qh-icon{width:19px;height:19px}
+.qh-shell .qh-form .qh-full{grid-column:1/-1}
+.qh-shell .qh-form button{gap:7px;min-height:44px;grid-column:1/-1}
+.qh-shell .qh-form button .qh-icon{width:17px;height:17px}
+.qh-shell .qh-form label{min-width:0}
+.qh-spaced{margin-top:15px}
+.qh-report-note{display:flex;align-items:flex-start;gap:8px;font-size:12px;line-height:1.8;color:#9bb8c5;margin:15px 0 0}
+.qh-report-note .qh-icon{width:16px;height:16px;flex:0 0 16px;margin-top:3px;color:#6fcbb2}
+.qh-shell .qh-row-link{display:inline-flex;gap:5px;align-items:center;white-space:nowrap;text-decoration:none!important;color:#80dabb!important;font-weight:800}
+.qh-row-link .qh-icon{width:15px;height:15px}
+@media(max-width:840px){.qh-dual-grid{grid-template-columns:1fr}.qh-shell .qh-form.qh-form-three{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:620px){.qh-page-symbol{min-width:44px;height:44px;border-radius:12px}.qh-page-symbol .qh-icon{width:25px;height:25px}.qh-page-head{padding:18px 15px}.qh-page-head .qh-btn{font-size:11px;padding:8px}.qh-shell .qh-form.qh-form-three{grid-template-columns:1fr}}
